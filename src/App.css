@@ -1,31 +1,110 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.Hnav {
+  background-color: #7EAE62;
+  overflow: hidden;
+}
+
+.Hnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Hnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.caca{
+  width: 600px;
+  position: relative;
+  left: 50px;
+  margin: 15px;
+}
+.caixaIn{
+  margin: 10px;
+}
+
+/* /////////////////////////////////////////CAIOSEL////////////////////////////////////////////// */
+
+.slider-wrapper{
+  position: relative;
+  width: 80%;
+  height: 600px;
+}
+
+/* App.css */
+ul{
+  display: none;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel .slide img {
+  width: 100%;
+  height: auto;
 }
+
+.carousel .legend {
+  display:none;
+}
+
+
+/* .slideshow {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  animation: fade 3s infinite;
+}
+
+.slideshow a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  40%{
+    opacity: 1;
+  }
+  53% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
