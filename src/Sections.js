@@ -1,12 +1,20 @@
 import React from 'react';
 import tabela from './images/imagem-2-real.png';
 import Lorem from './images/acido.png'
-import sol from './images/sun.png'
+import carbono from './images/carbono (1).png'
+import hidro from './images/hidrocarboneto.png'
+import alcool from './images/alcool-terciario.jpg'
+import ester from './images/grupo-funcional-ester.jpg'
+import amina from './images/Amina primária.png'
+import amida from "./images/amida.png"
+import aldeido from './images/aldeido.png'
 
 export function Introduction() {
   return (
     <div className="caixaS" style={{ display: 'flex', flexDirection: 'row', margin: '15px' }}>
+       
       <div>
+      <h1>Química Orgânica</h1>
         <h2>Introdução à Química Orgânica</h2>
         <p>A química orgânica é a disciplina científica que estuda a estrutura, propriedades, composição, reações e preparação (por síntese ou por outros meios) de compostos que contêm carbono. Estes compostos podem ser naturais ou sintéticos.</p>
       </div>
@@ -19,7 +27,7 @@ export function Introduction() {
 
 export function History() {
   return (
-    <div className="caixaS">
+    <div className="caixaS" style={{ display:'flex', flexDirection: 'row'}}>
       <figure>
         <img src={tabela} alt="" />
       </figure>
@@ -33,7 +41,7 @@ export function History() {
 
 export function Applications() {
   return (
-    <div className="caixaI">
+    <div className="caixaI" style={{ display:'flex', flexDirection: 'row'}}>
       <div>
         <h2>Aplicações da Química Orgânica</h2>
         <p>A química orgânica é fundamental para diversas áreas da ciência e da indústria. Algumas de suas aplicações incluem:</p>
@@ -53,12 +61,12 @@ export function Applications() {
 }
 
 export function Orbita(){
+  return(
     <div id="orbita">
-
             <div class="container">
-
+              
                 <div class="sun">
-                    <img src={sol} alt="sun"/>
+                    <img src={carbono} alt="sun"/>
                 </div>
                 <div class="mercury"></div>
                 <div class="venus"></div>
@@ -75,6 +83,7 @@ export function Orbita(){
             </div>
 
         </div>
+  )
 }
 
 export function FunctionalGroups() {
@@ -84,34 +93,41 @@ export function FunctionalGroups() {
         <h2>Grupo Funcional</h2>
         <p>Os compostos orgânicos possuem uma grande variedade de estruturas, desde as mais simples, como o metano, até as mais complexas, como as proteínas e o DNA. Aqui estão algumas das principais classes de compostos orgânicos:</p>
       </div>
-      <div className="cxEx">
-        <div className="cx1">
+      <div className="cxEx" >
+        <div className="cx1" style={{ display:'flex', flexDirection: 'row'}}>
           <div className="cxesc">
             <strong><a href="compostos.html">Hidrocarbonetos:</a></strong>
-            <figure><img src={Lorem} alt="a" /></figure>
+            <figure><img src={hidro} alt="a" /></figure>
           </div>
           <div className="cxesc">
             <strong><a href="compostos.html">Álcoois:</a></strong>
-            <figure><img src={Lorem} alt="" /></figure>
+            <figure><img src={alcool} alt="" /></figure>
           </div>
           <div className="cxesc">
             <strong><a href="compostos.html">Ácido carboxílico:</a></strong>
             <figure><img src={Lorem} alt="" /></figure>
           </div>
         </div>
-        <div className="cx2">
+        <div className="cx2" style={{ display:'flex', flexDirection: 'row'}}>
           <div className="cxesc">
             <strong><a href="compostos.html">Ésteres:</a></strong>
-            <figure><img src={Lorem} alt="" /></figure>
+            <figure><img src={ester} alt="" /></figure>
           </div>
           <div className="cxesc">
             <strong><a href="compostos.html">Aminas:</a></strong>
-            <figure><img src={Lorem} alt="" /></figure>
+            <figure><img src={amina} alt="" style={{height:'200px'}}/></figure>
           </div>
           <div className="cxesc">
             <strong><a href="compostos.html">Amidas:</a></strong>
-            <figure><img src={Lorem} alt="" /></figure>
+            <figure><img src={amida} alt="" /></figure>
           </div>
+        </div>
+        <div className="cx2" style={{ display:'flex', flexDirection: 'row', justifyContent:'center', alignItems:'center'}}>
+          <div className="cxesc">
+            <strong><a href="compostos.html">Aldeídos e Cetonas:</a></strong>
+            <figure><img src={aldeido} alt="" /></figure>
+          </div>
+          
         </div>
       </div>
     </div>

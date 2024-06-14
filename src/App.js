@@ -2,13 +2,12 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { Introduction, History, Applications, Orbita , FunctionalGroups, Conclusion} from './Sections';
-import Carousel from './Carousel';
+
 
 function App() {
   return (
     <Router>
       <header>
-        <h1>Química Orgânica</h1>
         <nav>
           <ul>
             <li><Link to="#introducao">Introdução</Link></li>
@@ -37,9 +36,9 @@ function App() {
         <section id="grupos">
           <FunctionalGroups />
         </section>
+        
+        <section>
         <Orbita />
-        <section id="carrossel">
-          <Carousel />
         </section>
         <section id="conclusao">
           <Conclusion />

@@ -112,7 +112,7 @@ div#orbita {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: #000000;
   overflow: hidden;
 }
 div#orbita .container {
@@ -141,7 +141,6 @@ div#orbita .sun {
   border-radius: 50%;
   box-shadow: 0 0 3em rgb(255, 128, 0);
   margin: 0;
-  animation: orbit 50s linear infinite;
   
 }
 div#orbita .mercury,
@@ -259,7 +258,7 @@ div#orbita .mercury::before {
   right: 0.8em;
   width: 2em;
   height: 2em;
-  background-image: url('images/mercury.png');
+  background-image: url('images/litio\ \(2\).png');
   background-size: cover;
 }
 div#orbita .venus::before {
@@ -267,7 +266,7 @@ div#orbita .venus::before {
   right: 2em;
   width: 2em;
   height: 2em;
-  background-image: url('images/venus.png');
+  background-image: url('images/cesio\ \(2\).png');
   background-size: cover;
 }
 div#orbita .earth::before {
@@ -275,16 +274,7 @@ div#orbita .earth::before {
   right: 0em;
   width: 5em;
   height: 5em;
-  background-image: url('images/earth.png');
-  background-size: cover;
-}
-
-div#orbita .moon::before {
-  top: 0.8em;
-  right: 0.2em;
-  width: 1.2em;
-  height: 1.2em;
-  background-image: url('images/moon.png');
+  background-image: url('images/hidrogenio\ \(1\).png ');
   background-size: cover;
 }
 div#orbita .mars::before {
@@ -292,7 +282,7 @@ div#orbita .mars::before {
   right: 3em;
   width: 3em;
   height: 3em;
-  background-image: url('images/mars.png');
+  background-image: url('images/enxofre\ \(1\).png');
   background-size: cover;
 }
 div#orbita .jupiter::before {
@@ -300,7 +290,7 @@ div#orbita .jupiter::before {
   right: 3em;
   width: 5em;
   height: 5em;
-  background-image: url('images/jupiter.png');
+  background-image: url('images/litio\ \(2\).png');
   background-size: cover;
 }
 div#orbita .saturn::before {
@@ -308,7 +298,7 @@ div#orbita .saturn::before {
   right: 5em;
   width: 4.5em;
   height: 4.5em;
-  background-image: url('images/saturn.png');
+  background-image: url('images/oxigenio\ \(2\).png');
   background-size: cover;
 }
 div#orbita .uranus::before {
@@ -316,7 +306,7 @@ div#orbita .uranus::before {
   right: 6.5em;
   width: 4em;
   height: 4em;
-  background-image: url('images/uranus.png');
+  background-image: url('images/sodio.png');
   background-size: cover;
 }
 div#orbita .neptune::before {
@@ -324,15 +314,7 @@ div#orbita .neptune::before {
   right: 8em;
   width: 4em;
   height: 4em;
-  background-image: url('images/neptune.png');
-  background-size: cover;
-}
-div#orbita .pluto::before {
-  top: 11em;
-  right: 10em;
-  width: 4em;
-  height: 4em;
-  background-image: url('images/pluto.png');
+  background-image: url('images/carbono\ \(1\).png');
   background-size: cover;
 }
 
